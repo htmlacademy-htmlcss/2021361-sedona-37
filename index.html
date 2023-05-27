@@ -1,12 +1,220 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <h1 class="page-title visually-hidden">Домашная страница города Седона</h1>
+    <div class="page-wrapper">
+      <header class="page-header">
+        <a class="logo" href="#">Logo</a>
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#">Главная</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#advantages">О седоне</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="./catalog.html"
+                >Гостиницы</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="user-menu">
+          <button class="search-link-icon" type="button">
+            <span class="visually-hidden">открыть модальное окно поиска</span>
+          </button>
+          <button class="favorites-count" type="button">
+            <span class="visually-hidden"
+              >открыть каталог с отбором по избранными отелям</span
+            >
+          </button>
+          <button type="button">Хочу сюда!</button>
+        </div>
+      </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+      <main class="page-content">
+        <section class="hero">
+          <div class="block-title">
+            <h2>
+              Седона — небольшой городок в Аризоне, заслуживающий большего!
+            </h2>
+            <span
+              >Рассмотрим причины, по которым Седона круче, чем
+              Гранд-Каньон!</span
+            >
+          </div>
+        </section>
 
+        <section id="advantages" class="advantages">
+          <div class="block-title">
+            <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <span>Опытный персонал и качественное обслуживание!</span>
+          </div>
+
+          <ul class="advantages-list">
+            <li>
+              <h3>Настоящий городок</h3>
+              <span
+                >Седона — не аттракцион для туристов, там течёт своя жизнь</span
+              >
+              <div>
+                <img
+                  src="./images/фото-заглушка-800px-385px.jpg"
+                  alt="Отель на фоне гор"
+                  width="800"
+                  height="385"
+                />
+              </div>
+            </li>
+            <li>
+              <h3>Небольшая площадь</h3>
+              <span>Все достопримечательности находятся очень близко</span>
+            </li>
+            <li>
+              <h3>Красивая дорога</h3>
+              <span>Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
+            </li>
+            <li>
+              <h3>Мало туристов</h3>
+              <span>Большинство едет в Гранд Каньон и толпится там</span>
+            </li>
+            <li>
+              <h3>Там есть мост дьявола</h3>
+              <span
+                >Да, по нему можно пройти! Если вы осмелитесь, разумеетсяь</span
+              >
+              <div>
+                <img
+                  src="./images/фото-заглушка-800px-385px.jpg"
+                  alt="Живописный пейзаж - каньон"
+                  width="800"
+                  height="385"
+                />
+              </div>
+            </li>
+
+            <li>
+              <h3>Жильё</h3>
+              <span
+                >Рекомендуем пожить в настоящем мотеле, всё как в кино!</span
+              >
+            </li>
+
+            <li>
+              <h3>Еда</h3>
+              <span>Большинство едет в Гранд Каньон и толпится там</span>
+            </li>
+
+            <li>
+              <h3>Сувениры</h3>
+              <span
+                >Не только китайского, но и настоящего местного
+                производства!</span
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="search-link">
+          <div class="block-title">
+            <h2>Заинтересовались?</h2>
+            <span
+              >Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+              предложения гостиниц в Седоне</span
+            >
+          </div>
+          <button class="serach-button">поиск гостиницы в Седоне</button>
+        </section>
+
+        <section class="subscribe-block">
+          <div class="block-title block-title--inverted">
+            <h2>Подпишитесь на рассылку</h2>
+            <span
+              >Только полезная информация и никакого спама, честное
+              бойскаутское!</span
+            >
+          </div>
+          <form
+            class="subscribe-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <label>
+              <input type="email" placeholder="Ваш e-mail" required />
+            </label>
+            <button class="subscribe-button" type="submit">Подписаться</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="socials-block">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="socials-list">
+            <li class="social-item">
+              <a class="social-link social-vk" href="https://htmlacademy.ru">
+                <span class="visually-hidden">Вконтакте</span>
+                <img
+                  src="./images/фото-заглушка-социальная-сеть.jpg"
+                  alt="#"
+                  width="47"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link social-telegram"
+                href="https://htmlacademy.ru"
+              >
+                <span class="visually-hidden">Телеграм</span>
+                <img
+                  src="./images/фото-заглушка-социальная-сеть.jpg"
+                  alt="#"
+                  width="47"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link social-youtube"
+                href="https://htmlacademy.ru"
+                ><span class="visually-hidden">Ютуб</span>
+                <img
+                  src="./images/фото-заглушка-социальная-сеть.jpg"
+                  alt="#"
+                  width="47"
+                  height="40"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contacts-block">
+          <h2 class="visually-hidden">Телефон</h2>
+          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
+
+        <div class="developer-block">
+          <h2 class="visually-hidden">Разработчик сайта</h2>
+          <div class="developer-logo">
+            <img
+              src="#"
+              alt="логотип компании-разработчика"
+              width="115"
+              height="33"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
