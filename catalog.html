@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Седона</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 class="visually-hidden">Каталог отелей города Седона</h1>
+    <header class="page-header">
+      <a class="logo" href="./index.html">Logo</a>
+      <nav class="main-navigation">
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Главная</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#advantages">О седоне</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="./catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-menu">
+        <button class="search-link-icon" type="button">
+          <span class="visually-hidden">открыть модальное окно поиска</span>
+        </button>
+        <button class="favorites-count" type="button">
+          <span class="visually-hidden"
+            >открыть каталог с отбором по избранными отелям</span
+          >
+        </button>
+        <button type="button">Хочу сюда!</button>
+      </div>
+    </header>
 
-</body>
+    <main class="page-content">
+      <form action="#" autocomplete="off">
+        <fieldset>
+          <legend>Стоимость, ₽:</legend>
+          <label>
+            <input
+              class="price-from"
+              type="number"
+              value="0"
+              name="price-from"
+              min="0"
+              max="9000"
+              placeholder="от"
+            />
+            от
+          </label>
+          <label>
+            <input
+              class="price-to"
+              type="number"
+              value="9000"
+              name="price-to"
+              min="0"
+              max="9000"
+              placeholder="до"
+            />
+            до
+          </label>
+          <div id="slider" class="search-form__cost-slider">
+            <label>
+              stub slider
+              <input type="range" />
+            </label>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <div class="socials-block">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="socials-list">
+          <li class="social-item">
+            <a class="social-link social-vk" href="https://htmlacademy.ru">
+              <span class="visually-hidden">Вконтакте</span>
+              <img
+                src="./images/фото-заглушка-социальная-сеть.jpg"
+                alt="#"
+                width="47.33"
+                height="40"
+              />
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link social-telegram"
+              href="https://htmlacademy.ru"
+            >
+              <span class="visually-hidden">Телеграм</span>
+              <img
+                src="./images/фото-заглушка-социальная-сеть.jpg"
+                alt="#"
+                width="47.33"
+                height="40"
+              />
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link social-youtube" href="https://htmlacademy.ru"
+              ><span class="visually-hidden">Ютуб</span>
+              <img
+                src="./images/фото-заглушка-социальная-сеть.jpg"
+                alt="#"
+                width="47.33"
+                height="40"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contacts-block">
+        <h2 class="visually-hidden">Телефон</h2>
+        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </div>
+
+      <div class="developer-block">
+        <h2 class="visually-hidden">Разработчик сайта</h2>
+        <div class="developer-logo">
+          <img
+            src="#"
+            alt="логотип компании-разработчика"
+            width="115"
+            height="33"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
