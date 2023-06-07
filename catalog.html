@@ -20,13 +20,13 @@
           /></a>
           <nav class="main-navigation">
             <ul class="main-navigation-list">
-              <li class="main-navigation-item main-navigation-item--current">
+              <li class="main-navigation-item false">
                 <a class="main-navigation-link" href="./index.html">Главная</a>
               </li>
               <li class="main-navigation-item false">
                 <a class="main-navigation-link" href="./index.html">О Седоне</a>
               </li>
-              <li class="main-navigation-item false">
+              <li class="main-navigation-item main-navigation-item--current">
                 <a class="main-navigation-link" href="#">Гостиницы</a>
               </li>
             </ul>
@@ -63,17 +63,17 @@
           </ul>
         </header>
         <main class="page-content">
+          <div class="catalog-page-title">
+            <h1 class="">Гостиницы Седоны</h1>
+          </div>
+          <ul class="breadcrumbs">
+            <li><a href="./index.html">Главная</a></li>
+            <li class="breadcrumbs__current">
+              <a href="./catalog.html">Гостиницы</a>
+            </li>
+          </ul>
           <section class="catalog-filter">
-            <div class="catalog-page-title">
-              <h1 class="">Гостиницы Седоны</h1>
-            </div>
             <h2 class="visually-hidden">Панель отбора гостиниц по фильтрам</h2>
-            <ul class="breadcrumbs">
-              <li><a href="./index.html">Главная</a></li>
-              <li class="breadcrumbs__current">
-                <a href="./catalog.html">Гостиницы</a>
-              </li>
-            </ul>
             <form action="#" autocomplete="off">
               <h2 class="visually-hidden">
                 Форма поиска гостиниц города Седона
@@ -164,7 +164,7 @@
               ><button type="reset">Сбросить</button>
             </form>
           </section>
-          <section class="catalog-block">
+          <div class="catalog-block">
             <h2 class="visually-hidden">Список гостиниц</h2>
             <div class="catalog-controls">
               <p class="search-result">Найдено гостиниц: 38</p>
@@ -184,19 +184,134 @@
                 </div>
               </div>
             </div>
-            <ul class="catalog__card-list">
-              <li class="card">
-                <div class="card-image"><img src="#" alt="Отель" /></div>
-                <h3>Amara Resort &amp; Spa</h3>
-                <dl>
-                  <dt>Гостиница</dt>
-                  <dd>От 4000 ₽</dd>
-                </dl>
-                <button type="button">подробнее</button
-                ><button type="button">в избранное</button>
-                <div class="rating-block"><span>Рейтинг: 8,5</span></div>
-              </li>
-            </ul>
+            <section class="hotels">
+              <ul class="hotels-list">
+                <li class="hotel-item card">
+                  <h3 class="hotel-name">Amara Resort &amp; Spa</h3>
+                  <div class="hotel-image">
+                    <img
+                      src="./images/hotel-1.jpg"
+                      alt="Гостиница Amara Resort &amp; Spa"
+                    />
+                  </div>
+                  <dl class="hotel-properties card-set">
+                    <dt class="hotel-type">Гостиница</dt>
+                    <dd class="hotel-price">От 4000 ₽</dd>
+                  </dl>
+                  <div class="hotel-buttons card-set">
+                    <button class="app-button" type="button">подробнее</button
+                    ><button
+                      class="app-button app-button--to-favorite"
+                      type="button"
+                    >
+                      в избранное
+                    </button>
+                  </div>
+                  <div class="hotel-review card-set">
+                    <div class="hotel-stars">
+                      <img src="./images/rating-star.svg" /><img
+                        src="./images/rating-star.svg"
+                      /><img src="./images/rating-star.svg" /><img
+                        src="./images/rating-star.svg"
+                      />
+                    </div>
+                    <div class="hotel-rating">Рейтинг: <span>8,5</span></div>
+                  </div>
+                </li>
+                <li class="hotel-item card">
+                  <h3 class="hotel-name">Villas at Poco Diablo</h3>
+                  <div class="hotel-image">
+                    <img
+                      src="./images/hotel-2.jpg"
+                      alt="Гостиница Villas at Poco Diablo"
+                    />
+                  </div>
+                  <dl class="hotel-properties card-set">
+                    <dt class="hotel-type">Гостиница</dt>
+                    <dd class="hotel-price">От 5000 ₽</dd>
+                  </dl>
+                  <div class="hotel-buttons card-set">
+                    <button class="app-button" type="button">подробнее</button
+                    ><button
+                      class="app-button app-button--favorite"
+                      type="button"
+                    >
+                      в избранном
+                    </button>
+                  </div>
+                  <div class="hotel-review card-set">
+                    <div class="hotel-stars">
+                      <img src="./images/rating-star.svg" /><img
+                        src="./images/rating-star.svg"
+                      /><img src="./images/rating-star.svg" /><img
+                        src="./images/rating-star.svg"
+                      />
+                    </div>
+                    <div class="hotel-rating">Рейтинг: <span>9,2</span></div>
+                  </div>
+                </li>
+                <li class="hotel-item card">
+                  <h3 class="hotel-name">Desert Quail Inn</h3>
+                  <div class="hotel-image">
+                    <img
+                      src="./images/hotel-3.jpg"
+                      alt="Гостиница Desert Quail Inn"
+                    />
+                  </div>
+                  <dl class="hotel-properties card-set">
+                    <dt class="hotel-type">Гостиница</dt>
+                    <dd class="hotel-price">От 2500 ₽</dd>
+                  </dl>
+                  <div class="hotel-buttons card-set">
+                    <button class="app-button" type="button">подробнее</button
+                    ><button
+                      class="app-button app-button--to-favorite"
+                      type="button"
+                    >
+                      в избранное
+                    </button>
+                  </div>
+                  <div class="hotel-review card-set">
+                    <div class="hotel-stars">
+                      <img src="./images/rating-star.svg" /><img
+                        src="./images/rating-star.svg"
+                      /><img src="./images/rating-star.svg" />
+                    </div>
+                    <div class="hotel-rating">Рейтинг: <span>6,9</span></div>
+                  </div>
+                </li>
+                <li class="hotel-item card">
+                  <h3 class="hotel-name">GreenTree Inn</h3>
+                  <div class="hotel-image">
+                    <img
+                      src="./images/hotel-4.jpg"
+                      alt="Гостиница GreenTree Inn"
+                    />
+                  </div>
+                  <dl class="hotel-properties card-set">
+                    <dt class="hotel-type">Гостиница</dt>
+                    <dd class="hotel-price">От 1500 ₽</dd>
+                  </dl>
+                  <div class="hotel-buttons card-set">
+                    <button class="app-button" type="button">подробнее</button
+                    ><button
+                      class="app-button app-button--to-favorite"
+                      type="button"
+                    >
+                      в избранное
+                    </button>
+                  </div>
+                  <div class="hotel-review card-set">
+                    <div class="hotel-stars">
+                      <img src="./images/rating-star.svg" /><img
+                        src="./images/rating-star.svg"
+                      />
+                    </div>
+                    <div class="hotel-rating">Рейтинг: <span>5,0</span></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
             <ul class="catalog__pagination-list">
               <li
                 class="catalog__pagination-item catalog__pagination-item--current"
@@ -213,7 +328,7 @@
               </li>
               <li class="catalog__pagination-item"><a href="#">10</a></li>
             </ul>
-          </section>
+          </div>
           <section class="subscribe">
             <h2 class="section-primary-title section-title--inverted">
               Подпишитесь на рассылку
