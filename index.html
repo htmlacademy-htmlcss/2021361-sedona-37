@@ -31,36 +31,31 @@
               </li>
             </ul>
           </nav>
-          <ul class="user-menu">
-            <li>
-              <button
-                class="user-menu-icon search-button"
-                aria-label="поиск по названию отеля"
-              ></button>
-            </li>
-            <li class="favorite-link-wrapper">
-              <a
-                class="user-menu-icon favorite-link"
-                href="#"
-                aria-label="переход на страницу избранных отелей"
-              ></a>
-              <div
-                class="favorite-counter"
-                aria-label="количество отелей в избранном"
-              >
-                <span>12</span>
-              </div>
-            </li>
-            <li class="want-here-wrapper">
-              <button
-                class="app-button user-menu-open-popup"
-                type="button"
-                aria-label="открыть окно поиска отеля"
-              >
-                Хочу сюда!
-              </button>
-            </li>
-          </ul>
+          <div class="user-actions-menu">
+            <ul class="user-actions-list">
+              <li class="user-action-item">
+                <button
+                  class="user-action user-action--search"
+                  aria-label="Найти отель по названию"
+                ></button>
+              </li>
+              <li class="user-action-item">
+                <a
+                  class="user-action user-action--favorites"
+                  href="#"
+                  aria-label="Перейти на страницу избранных отелей"
+                ></a
+                ><span
+                  class="favorite-counter user-action--favorites-counter"
+                  aria-label="количество избранных отелей"
+                  >12</span
+                >
+              </li>
+            </ul>
+            <button class="app-button want-here-button" type="button">
+              Хочу сюда!
+            </button>
+          </div>
         </header>
         <main class="page-content">
           <h1 class="visually-hidden">Домашная страница города Седона</h1>
@@ -71,14 +66,14 @@
             <img
               class="hero-image"
               src="./images/welcome.svg"
-              alt="Надпись: Добро пожаловать в восхитительную Седону, которая лучше, чем Гранд-Каньён"
+              alt="Добро пожаловать в восхитительную Седону, которая лучше, чем Гранд-Каньён"
               width="458"
               height="352"
             />
-            <div class="hero-triangle triangle-left--outer"></div>
-            <div class="hero-triangle triangle-left--inner"></div>
-            <div class="hero-triangle triangle-right--outer"></div>
-            <div class="hero-triangle triangle-right--inner"></div>
+            <div class="hero-figure triangle--left-outer"></div>
+            <div class="hero-figure triangle--left-inner"></div>
+            <div class="hero-figure triangle--right-outer"></div>
+            <div class="hero-figure triangle--right-inner"></div>
           </section>
           <section class="advantages" id="advantages">
             <div class="advantages-title-1">
@@ -90,69 +85,55 @@
               </p>
             </div>
             <ul class="advantages-list">
-              <li class="advantage-item background--main">
-                <div
-                  class="advantage-description advantage-description--underlined"
-                >
+              <li class="advantage-item bg--main">
+                <div class="advantage advantage--underlined">
                   <h3 class="advantage-title">Настоящий городок</h3>
                   <p class="advantage-slogan">
                     Седона — не аттракцион для туристов, там течёт своя жизнь
                   </p>
                 </div>
-                <div class="advantage-image">
-                  <img
-                    src="./images/advantage-1.jpg"
-                    alt="Фотография местного пейжаза"
-                  />
-                </div>
+                <img
+                  class="advantage-image"
+                  src="./images/advantage-1.jpg"
+                  alt="Фотография местного пейжаза"
+                />
               </li>
-              <li class="advantage-item background--option-lighter">
-                <div
-                  class="advantage-description advantage-description--underlined"
-                >
+              <li class="advantage-item bg--option-lighter">
+                <div class="advantage advantage--underlined">
                   <h3 class="advantage-title">Небольшая площадь</h3>
                   <p class="advantage-slogan">
                     Все достопримечательности находятся очень близко
                   </p>
                 </div>
               </li>
-              <li class="advantage-item background--option">
-                <div
-                  class="advantage-description advantage-description--underlined"
-                >
+              <li class="advantage-item bg--option">
+                <div class="advantage advantage--underlined">
                   <h3 class="advantage-title">Красивая дорога</h3>
                   <p class="advantage-slogan">
                     Ехать в Седону из Лас-Вегаса совсем не скучно!
                   </p>
                 </div>
               </li>
-              <li class="advantage-item background--option-lighter">
-                <div
-                  class="advantage-description advantage-description--underlined"
-                >
+              <li class="advantage-item bg--option-lighter">
+                <div class="advantage advantage--underlined">
                   <h3 class="advantage-title">Мало туристов</h3>
                   <p class="advantage-slogan">
                     Большинство едет в Гранд Каньон и толпится там
                   </p>
                 </div>
               </li>
-              <li class="advantage-item background--main">
-                <div
-                  class="advantage-description advantage-description--underlined"
-                >
-                  <h3 class="advantage-title">Там есть<br> мост дьявола</h3>
+              <li class="advantage-item bg--main">
+                <div class="advantage advantage--underlined">
+                  <h3 class="advantage-title">Там есть мост дьявола</h3>
                   <p class="advantage-slogan">
                     Да, по нему можно пройти! Если вы осмелитесь, разумеется
                   </p>
                 </div>
-                <div
-                  class="advantage-image advantage-image--before-description"
-                >
-                  <img
-                    src="./images/advantage-2.jpg"
-                    alt="Фотография каньона"
-                  />
-                </div>
+                <img
+                  class="advantage-image advantage-image--before"
+                  src="./images/advantage-2.jpg"
+                  alt="Фотография каньона"
+                />
               </li>
             </ul>
             <div class="advantages-title-2">
@@ -164,8 +145,8 @@
               </p>
             </div>
             <ul class="advantages-list">
-              <li class="advantage-item background--option">
-                <div class="advantage-description">
+              <li class="advantage-item bg--option">
+                <div class="advantage advantage--with-icon">
                   <h3 class="advantage-title">Жильё</h3>
                   <p class="advantage-slogan">
                     Рекомендуем пожить в настоящем мотеле, всё как в кино!
@@ -175,8 +156,8 @@
                   </div>
                 </div>
               </li>
-              <li class="advantage-item background--option-lighter">
-                <div class="advantage-description">
+              <li class="advantage-item bg--option-lighter">
+                <div class="advantage advantage--with-icon">
                   <h3 class="advantage-title">Еда</h3>
                   <p class="advantage-slogan">
                     Всегда заказывайте топовый фирменный бургер, вы не
@@ -187,8 +168,8 @@
                   </div>
                 </div>
               </li>
-              <li class="advantage-item background--option">
-                <div class="advantage-description">
+              <li class="advantage-item bg--option">
+                <div class="advantage advantage--with-icon">
                   <h3 class="advantage-title">Сувениры</h3>
                   <p class="advantage-slogan">
                     Не только китайского, но и настоящего местного производства!
