@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="root">
+    <div class="root">
       <div class="page-wrapper">
         <header class="page-header">
           <a class="header-logo" href="./index.html" aria-current="false"
@@ -58,10 +58,8 @@
           </div>
         </header>
         <main class="page-content">
-          <div class="filter-wrapper">
-            <div class="catalog-page-title">
-              <h1 class="">Гостиницы Седоны</h1>
-            </div>
+          <div class="filter">
+            <h1 class="catalog-page-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="main-page-link" href="./index.html"
@@ -80,23 +78,29 @@
                 <fieldset class="filter-set">
                   <legend>Инфраструктура:</legend>
                   <div class="filter-set-wrapper">
+                    <label class="form-input">
+                      <input
+                        class="input"
+                        type="checkbox"
+                        name="feature"
+                        value="pool"
+                        checked
+                      />
+                      <span class="input-icon checkbox-icon"></span>
+                      <span class="input-view">Бассейн</span>
+                    </label>
                     <label class="form-input"
                       ><input
                         class="input"
                         type="checkbox"
                         name="feature"
-                        value="pool"
-                      /><span class="input-icon checkbox-icon"></span
-                      ><span class="input-view">Бассейн</span></label
-                    ><label class="form-input"
-                      ><input
-                        class="input"
-                        type="checkbox"
-                        name="feature"
                         value="parking"
-                      /><span class="input-icon checkbox-icon"></span
-                      ><span class="input-view">Парковка</span></label
-                    ><label class="form-input"
+                        checked
+                      />
+                      <span class="input-icon checkbox-icon"></span>
+                      <span class="input-view">Парковка</span>
+                    </label>
+                    <label class="form-input"
                       ><input
                         class="input"
                         type="checkbox"
@@ -116,6 +120,7 @@
                         type="radio"
                         name="hotel-type"
                         value="hotel"
+                        checked
                       /><span class="input-icon radio-icon"></span
                       ><span class="input-view">Гостиница</span></label
                     ><label class="form-input"
@@ -189,35 +194,31 @@
               </form>
             </section>
           </div>
-          <div>
+          <div class="catalog">
             <h2 class="visually-hidden">Список гостиниц</h2>
             <div class="catalog-controls">
               <p class="search-result">Найдено гостиниц: 38</p>
-              <div class="catalog-sortings">
-                <select id="price-sort-direction" name="price-sort-direction">
-                  <option value="to-hight">Сначала дешевые</option>
-                  <option value="to-low">Сначала дорогие</option>
-                </select>
-                <div class="sort-view">
-                  <button type="button">
-                    <span class="visually-hidden">вариант 1</span></button
-                  ><button type="button">
-                    <span class="visually-hidden">вариант 2</span></button
-                  ><button type="button">
-                    <span class="visually-hidden">вариант 3</span>
-                  </button>
-                </div>
+              <select class="sort-direction" name="sort-direction">
+                <option value="low-price-first">Сначала дешевые</option>
+                <option value="high-price-first">Сначала дорогие</option>
+              </select>
+              <div class="sort-view-controls catalog-view-controls">
+                <button
+                  class="view-mode view-mode--grid view-mode--checked"
+                ></button
+                ><button class="view-mode view-mode--display"></button
+                ><button class="view-mode view-mode--list"></button>
               </div>
             </div>
-            <section class="catalog">
-              <ul class="hotels-list">
-                <li>
-                  <h3 class="hotel-name">Amara Resort &amp; Spa</h3>
-                  <img
-                    class="hotel-photo"
-                    src="./images/hotel-1.jpg"
-                    alt="Гостиница Amara Resort &amp; Spa"
-                  />
+            <ul class="hotels-list">
+              <li class="hotel-item">
+                <h3 class="hotel-name">Amara Resort &amp; Spa</h3>
+                <img
+                  class="hotel-photo"
+                  src="./images/hotel-1.jpg"
+                  alt="Гостиница Amara Resort &amp; Spa"
+                />
+                <div class="hotel-properties-wrapper">
                   <dl class="hotel-properties">
                     <div class="hotel-property">
                       <dt class="hotel-property-key">Гостиница</dt>
@@ -290,22 +291,24 @@
                     >
                   </div>
                   <div class="hotel-rating">Рейтинг: 8,5</div>
-                </li>
-                <li>
-                  <h3 class="hotel-name">Villas at Poco Diablo</h3>
-                  <img
-                    class="hotel-photo"
-                    src="./images/hotel-2.jpg"
-                    alt="Гостиница Villas at Poco Diablo"
-                  />
+                </div>
+              </li>
+              <li class="hotel-item">
+                <h3 class="hotel-name">Villas at Poco Diablo</h3>
+                <img
+                  class="hotel-photo"
+                  src="./images/hotel-2.jpg"
+                  alt="Гостиница Villas at Poco Diablo"
+                />
+                <div class="hotel-properties-wrapper">
                   <dl class="hotel-properties">
                     <div class="hotel-property">
                       <dt class="hotel-property-key">Гостиница</dt>
                       <dd class="hotel-property-value">От 5000 ₽</dd>
                     </div>
                   </dl>
-                  <button class="app-button" type="button">подробнее</button>
-                  <button class="app-button button--selected" type="button">
+                  <button class="app-button" type="button">подробнее</button
+                  ><button class="app-button button--selected" type="button">
                     в избранном
                   </button>
                   <div class="hotel-stars">
@@ -370,14 +373,16 @@
                     >
                   </div>
                   <div class="hotel-rating">Рейтинг: 9,2</div>
-                </li>
-                <li>
-                  <h3 class="hotel-name">Desert Quail Inn</h3>
-                  <img
-                    class="hotel-photo"
-                    src="./images/hotel-3.jpg"
-                    alt="Гостиница Desert Quail Inn"
-                  />
+                </div>
+              </li>
+              <li class="hotel-item">
+                <h3 class="hotel-name">Desert Quail Inn</h3>
+                <img
+                  class="hotel-photo"
+                  src="./images/hotel-3.jpg"
+                  alt="Гостиница Desert Quail Inn"
+                />
+                <div class="hotel-properties-wrapper">
                   <dl class="hotel-properties">
                     <div class="hotel-property">
                       <dt class="hotel-property-key">Гостиница</dt>
@@ -415,8 +420,9 @@
                       <path
                         d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
                         fill="#83B3D3"
-                      ></path></svg>
-                      <svg
+                      ></path>
+                    </svg>
+                    <svg
                       class="star"
                       aria-hidden="true"
                       width="18"
@@ -428,20 +434,23 @@
                       <path
                         d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
                         fill="#83B3D3"
-                      ></path></svg>
-                      <span class="visually-hidden"
+                      ></path>
+                    </svg>
+                    <span class="visually-hidden"
                       >Количество звезд отеля: 3</span
                     >
                   </div>
                   <div class="hotel-rating">Рейтинг: 6,9</div>
-                </li>
-                <li>
-                  <h3 class="hotel-name">GreenTree Inn</h3>
-                  <img
-                    class="hotel-photo"
-                    src="./images/hotel-4.jpg"
-                    alt="Гостиница GreenTree Inn"
-                  />
+                </div>
+              </li>
+              <li class="hotel-item">
+                <h3 class="hotel-name">GreenTree Inn</h3>
+                <img
+                  class="hotel-photo"
+                  src="./images/hotel-4.jpg"
+                  alt="Гостиница GreenTree Inn"
+                />
+                <div class="hotel-properties-wrapper">
                   <dl class="hotel-properties">
                     <div class="hotel-property">
                       <dt class="hotel-property-key">Гостиница</dt>
@@ -465,8 +474,9 @@
                       <path
                         d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
                         fill="#83B3D3"
-                      ></path></svg>
-                      <svg
+                      ></path>
+                    </svg>
+                    <svg
                       class="star"
                       aria-hidden="true"
                       width="18"
@@ -478,16 +488,17 @@
                       <path
                         d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
                         fill="#83B3D3"
-                      ></path></svg>
-                      <span class="visually-hidden"
+                      ></path>
+                    </svg>
+                    <span class="visually-hidden"
                       >Количество звезд отеля: 2</span
                     >
                   </div>
                   <div class="hotel-rating">Рейтинг: 5,0</div>
-                </li>
-              </ul>
-            </section>
-            <ul class="pagination-list catalog-pagination">
+                </div>
+              </li>
+            </ul>
+            <ul class="pagination-list">
               <li class="pagination-item">
                 <a class="pagination-link pagination-link--current" href="#"
                   >1</a
@@ -512,24 +523,25 @@
               </li>
             </ul>
           </div>
-          <section class="subscribe">
-            <h2 class="section-primary-title section-title--inverted">
-              Подпишитесь на рассылку
-            </h2>
-            <p class="section-secondary-title section-title--inverted">
+          <section class="subscribe subscribe--cleared">
+            <h2 class="section-title">Подпишитесь на рассылку</h2>
+            <p class="section-subtitle">
               Только полезная информация и никакого спама, честное бойскаутское!
             </p>
             <form
-              class="subscribe-form"
+              class="subscribe-form subscribe-form-container"
               action="https://echo.htmlacademy.ru/"
               method="post"
             >
-              <label
-                ><input
-                  type="email"
-                  placeholder="Ваш e-mail"
-                  required="" /></label
-              ><button class="subscribe-button" type="submit">
+              <input
+                class="subscribe-input subscribe-input--alter"
+                type="email"
+                placeholder="Ваш e-mail"
+                required=""
+              /><button
+                class="subscribe-button app-button app-button--large button--optional"
+                type="submit"
+              >
                 Подписаться
               </button>
             </form>
