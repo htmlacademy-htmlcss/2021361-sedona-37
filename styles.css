@@ -81,7 +81,7 @@ img {
   clip-path: inset(100%);
 }
 
-#root {
+.root {
   width: 1280px;
   min-height: 100%;
   margin: 0 auto;
