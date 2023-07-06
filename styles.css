@@ -90,16 +90,6 @@ img {
   clip-path: inset(100%);
 }
 
-/*
-#root {
-  width: 1280px;
-  min-height: 100%;
-  margin: 0 auto;
-  padding: 0 40px;
-  background-clip: content-box;
-}
-*/
-
 .page-wrapper {
   width: 1200px;
   min-height: 100%;
