@@ -1403,6 +1403,15 @@ input[type="number"] {
   font-size: 18px;
 }
 
+.modal__input:hover,
+.modal__input:focus-visible {
+  background-color: var(--color-white-alter-2);
+}
+
+.modal__input:focus-visible {
+  outline: var(--outline);
+}
+
 .modal__input--text {
   padding: 12px 20px;
   line-height: 24px;
