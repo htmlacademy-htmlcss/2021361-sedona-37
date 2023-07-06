@@ -480,10 +480,9 @@ img {
 .advantage {
   flex-basis: 400px;
   min-height: 385px;
-  padding: 85px;
+  padding: 103px 85px 81px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -511,6 +510,10 @@ img {
   text-align: center;
   white-space: pre-line;
   order: -2;
+}
+
+.advantage-title--lower {
+  margin-top: 10px;
 }
 
 .advantage--underlined:after {
