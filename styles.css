@@ -478,6 +478,7 @@ img {
 }
 
 .advantage {
+  flex-basis: 400px;
   min-height: 385px;
   padding: 85px;
   display: flex;
@@ -540,7 +541,8 @@ img {
   color: var(--color-gray);
 }
 
-.advantage-slogan span:after {
+.advantage-slogan span:after,
+.section-subtitle span:after {
   content: "\A";
   white-space: pre;
 }
