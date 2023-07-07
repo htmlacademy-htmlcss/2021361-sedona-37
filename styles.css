@@ -1404,7 +1404,10 @@ input[type="number"] {
 }
 
 .modal__input:hover,
-.modal__input:focus-visible {
+.modal__input:focus-visible,
+.modal__input:hover ~ .count-button,
+.modal__input:focus-visible ~ .count-button,
+.modal__input:has(~ .count-button:hover) {
   background-color: var(--color-white-alter-2);
 }
 
@@ -1450,6 +1453,7 @@ input[type="number"] {
   cursor: pointer;
   position: relative;
   color: var(--color-brown-opacity-03);
+  background-color: transparent;
 }
 
 .count-button:hover {
