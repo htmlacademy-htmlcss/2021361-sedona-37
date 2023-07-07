@@ -1417,6 +1417,20 @@ input[type="number"] {
   line-height: 24px;
 }
 
+.modal__input--text + .date-picker {
+  grid-column: -1;
+  margin-left: -38px;
+}
+
+.date-picker {
+  width: 16px;
+  height: 15px;
+  background-image: url("./images/date-picker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+}
+
 .modal__input--number {
   grid-area: 1 / 2 / 2 / 5;
   padding: 14px 10px;
