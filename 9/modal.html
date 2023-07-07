@@ -14,33 +14,34 @@
         <h1 class="section-title modal__title">Поиск гостиницы в седоне</h1>
         <form class="modal__form">
           <div class="modal__field">
-            <label class="modal__label" for="date-from">Дата заезда:</label
-            ><input
+            <label class="modal__label" for="date-from">Дата заезда:</label>
+            <input
               class="modal__input modal__input--text"
               type="text"
               name="date-from"
               id="date-from"
               value="27 апреля 2020"
+              placeholder="Укажите дату"
             />
-            <p class="modal__input-state modal__input-state--error">
-              Мы не можем отправить вас в прошлое.<span class="modal__tooltip"
-                >Мы не можем отправить вас в прошлое. Мы не можем отправить вас
-                в прошлое. Мы не можем отправить вас в прошлое.</span
-              >
-            </p>
+            <div class="date-picker"></div>
+            <span class="modal__input-state modal__input-state--error">
+              Мы не можем отправить вас в прошлое.
+            </span>
           </div>
           <div class="modal__field">
-            <label class="modal__label" for="date-to">Дата выезда:</label
-            ><input
+            <label class="modal__label" for="date-to">Дата выезда:</label>
+            <input
               class="modal__input modal__input--text"
               type="text"
               name="date-to"
               id="date-to"
               value="1 сентября 2023"
+              placeholder="Укажите дату"
             />
-            <p class="modal__input-state">
+            <div class="date-picker"></div>
+            <span class="modal__input-state">
               На эти даты есть свободные номера. Пока есть.
-            </p>
+            </span>
           </div>
           <div class="modal__field modal__field--short">
             <label class="modal__label" for="man-count">Взрослые:</label

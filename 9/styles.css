@@ -1403,9 +1403,36 @@ input[type="number"] {
   font-size: 18px;
 }
 
+.modal__input:hover,
+.modal__input:focus-visible,
+.modal__input:hover ~ .count-button,
+.modal__input:focus-visible ~ .count-button,
+.modal__input:has(~ .count-button:hover) {
+  background-color: var(--color-white-alter-2);
+}
+
+.modal__input:focus-visible {
+  outline: var(--outline);
+}
+
 .modal__input--text {
   padding: 12px 20px;
   line-height: 24px;
+}
+
+.modal__input--text + .date-picker {
+  grid-column: -1;
+  margin-left: -38px;
+}
+
+.date-picker {
+  width: 16px;
+  height: 15px;
+  background-image: url("./images/date-picker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .modal__input--number {
@@ -1426,6 +1453,7 @@ input[type="number"] {
   cursor: pointer;
   position: relative;
   color: var(--color-brown-opacity-03);
+  background-color: transparent;
 }
 
 .count-button:hover {
