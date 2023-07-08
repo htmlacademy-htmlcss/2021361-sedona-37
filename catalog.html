@@ -10,23 +10,26 @@
   <body>
     <div class="page-wrapper">
       <header class="page-header">
-        <a class="header-logo" href="./index.html" aria-current="false"
+        <a class="header-logo" href="./index.html" aria-current="page"
           ><img
             src="./images/logo.svg"
             alt="Логотип города Седона"
             width="140"
             height="70"
-        /></a>
+          />
+        </a>
         <nav class="main-navigation">
           <ul class="main-navigation-list">
-            <li class="main-navigation-item false">
-              <a class="main-navigation-link" href="./index.html">Главная</a>
-            </li>
-            <li class="main-navigation-item false">
-              <a class="main-navigation-link" href="./index.html">О Седоне</a>
-            </li>
             <li class="main-navigation-item main-navigation-item--current">
-              <a class="main-navigation-link" href="#">Гостиницы</a>
+              <a class="main-navigation-link" href="#">Главная</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#advantages">О Седоне</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="./catalog.html">
+                Гостиницы
+              </a>
             </li>
           </ul>
         </nav>
@@ -44,18 +47,20 @@
                 href="#"
                 aria-label="Перейти на страницу избранных отелей"
               >
-            </a>
+              </a>
               <span
                 class="favorite-counter user-action--favorites-counter"
                 aria-label="количество избранных отелей"
-                >
+              >
                 12
-                </span>
+              </span>
             </li>
           </ul>
-          <button class="app-button want-here-button" type="button">
-            Хочу сюда!
-          </button>
+          <div class="user-buttons">
+            <button class="app-button want-here-button" type="button">
+              Хочу сюда!
+            </button>
+          </div>
         </div>
       </header>
       <main class="page-content">
@@ -180,8 +185,8 @@
                   <div class="price-slider-wrapper">
                     <div class="slider-element slider-axis slider-axis--second"></div>
                     <div class="slider-element slider-axis"></div>
-                    <input class="slider-element slider-point" type="button" value="min">
-                    <input class="slider-element slider-point slider-point--second" type="button" value="max">
+                    <input class="slider-element slider-point" type="button">
+                    <input class="slider-element slider-point slider-point--second" type="button">
                   </div>
                 </div>
               </fieldset>
@@ -569,12 +574,11 @@
               type="email"
               placeholder="Ваш e-mail"
               required=""
-            /><button
+            />
+            <button
               class="subscribe-button app-button app-button--large button--optional"
               type="submit"
-            >
-              Подписаться
-            </button>
+            >Подписаться</button>
           </form>
         </section>
       </main>

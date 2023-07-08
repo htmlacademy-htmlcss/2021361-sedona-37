@@ -118,10 +118,10 @@ img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  height: 36px;
+  min-height: 36px;
   border: none;
   border-radius: 4px;
-  padding: 0;
+  padding: 8px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -130,9 +130,8 @@ img {
   background-color: var(--color-brown);
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
-  display: grid;
-  place-content: center;
 }
 
 .button--selected {
@@ -193,7 +192,7 @@ img {
 }
 
 .app-button--large {
-  height: 52px;
+  min-height: 52px;
   font-size: 20px;
   line-height: 36px;
 }
@@ -300,15 +299,17 @@ img {
 
 .user-actions-menu {
   min-width: 268px;
-  display: inline-flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 88px 160px;
+  column-gap: 20px;
+  align-items: start;
 }
 
 .user-actions-list {
   list-style-type: none;
-  margin: 0 20px 0 0;
+  margin: 0;
   padding: 0;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -372,11 +373,18 @@ img {
   z-index: 1;
 }
 
+
+.user-buttons {
+  padding-top: 14px;
+}
+
+.user-buttons > button {
+  margin-bottom: 8px;
+}
+
 .want-here-button {
   min-width: 160px;
   padding: 8px 34px;
-  align-self: flex-start;
-  margin-top: 14px;
 }
 
 /* Контейнер с основным контентом */
@@ -586,7 +594,6 @@ img {
 .subscribe-form {
   display: grid;
   grid-template-columns: 452px 232px;
-  grid-template-rows: 52px;
 }
 
 .subscribe-input {
@@ -1058,7 +1065,7 @@ input[type="number"] {
 .hotel-item {
   max-width: 340px;
   min-height: 438px;
-  border: 1px solid var(--color-white-alter-2);
+  outline: 1px solid var(--color-white-alter-2);
   border-radius: 4px;
   padding: 20px;
   display: flex;
