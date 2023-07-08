@@ -43,12 +43,14 @@
                 class="user-action user-action--favorites"
                 href="#"
                 aria-label="Перейти на страницу избранных отелей"
-              ></a
-              ><span
+              >
+            </a>
+              <span
                 class="favorite-counter user-action--favorites-counter"
                 aria-label="количество избранных отелей"
-                >12</span
-              >
+                >
+                12
+                </span>
             </li>
           </ul>
           <button class="app-button want-here-button" type="button">
@@ -61,11 +63,11 @@
           <h1 class="catalog-page-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="./index.html"
-                ><svg
+              <a class="breadcrumbs-link" href="./index.html">
+                <svg
                   width="13"
                   height="13"
-                  viewBox="0 0 13 13"
+                  view-box="0 0 13 13"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -76,8 +78,8 @@
                     d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z"
                   ></path>
                 </svg>
-                <span class="visually-hidden">Главная</span></a
-              >
+                <span class="visually-hidden">Главная</span>
+              </a>
             </li>
             <li class="breadcrumbs-item breadcrumbs-item--current">
               Гостиницы
@@ -89,64 +91,69 @@
               <fieldset class="filter-set">
                 <legend>Инфраструктура:</legend>
                 <div class="filter-set-wrapper">
-                  <label class="form-input"
-                    ><input
+                  <label class="form-input">
+                    <input
                       class="input"
                       type="checkbox"
                       name="feature"
                       value="pool"
                       checked
-                    /><span class="input-icon checkbox-icon"></span
-                    ><span class="input-view">Бассейн</span></label
-                  ><label class="form-input"
-                    ><input
+                    />
+                    <span class="input-icon checkbox-icon"></span>
+                    <span class="input-view">Бассейн</span>
+                    </label>
+                    <label class="form-input">
+                      <input
                       class="input"
                       type="checkbox"
                       name="feature"
                       value="parking"
-                      checked
-                    /><span class="input-icon checkbox-icon"></span
-                    ><span class="input-view">Парковка</span></label
-                  ><label class="form-input"
-                    ><input
+                      checked>
+                    <span class="input-icon checkbox-icon"></span>
+                    <span class="input-view">Парковка</span>
+                    </label>
+                    <label class="form-input">
+                      <input
                       class="input"
                       type="checkbox"
                       name="feature"
-                      value="wifi"
-                    /><span class="input-icon checkbox-icon"></span
-                    ><span class="input-view">Wi-Fi</span></label
-                  >
+                      value="wifi">
+                      <span class="input-icon checkbox-icon"></span>
+                      <span class="input-view">Wi-Fi</span>
+                      </label>
                 </div>
               </fieldset>
               <fieldset class="filter-set">
                 <legend>Тип жилья:</legend>
                 <div class="filter-set-wrapper">
-                  <label class="form-input"
-                    ><input
+                  <label class="form-input">
+                    <input
                       class="input"
                       type="radio"
                       name="hotel-type"
                       value="hotel"
-                      checked
-                    /><span class="input-icon radio-icon"></span
-                    ><span class="input-view">Гостиница</span></label
-                  ><label class="form-input"
-                    ><input
+                      checked>
+                      <span class="input-icon radio-icon"></span>
+                      <span class="input-view">Гостиница</span>
+                  </label>
+                  <label class="form-input">
+                      <input
                       class="input"
                       type="radio"
                       name="hotel-type"
-                      value="motel"
-                    /><span class="input-icon radio-icon"></span
-                    ><span class="input-view">Мотель</span></label
-                  ><label class="form-input"
-                    ><input
+                      value="motel">
+                      <span class="input-icon radio-icon"></span>
+                      <span class="input-view">Мотель</span>
+                    </label>
+                     <label class="form-input">
+                      <input
                       class="input"
                       type="radio"
                       name="hotel-type"
-                      value="apartments"
-                    /><span class="input-icon radio-icon"></span
-                    ><span class="input-view">Апартаменты</span></label
-                  >
+                      value="apartments">
+                      <span class="input-icon radio-icon"></span>
+                      <span class="input-view">Апартаменты</span>
+                    </label>
                 </div>
               </fieldset>
               <fieldset class="filter-set filter-set--extra">
@@ -159,22 +166,22 @@
                       type="number"
                       min="0"
                       max="15000"
-                      value="0"
-                    /><label class="price-label" for="price-from">от</label
-                    ><input
+                      value="0">
+                    <label class="price-label" for="price-from">от</label>
+                    <input
                       class="price-input price--to"
                       id="price-to"
                       type="number"
                       min="0"
                       max="15000"
-                      value="9000"
-                    /><label class="price-label" for="price-to">до</label>
+                      value="9000">
+                    <label class="price-label" for="price-to">до</label>
                   </div>
                   <div class="price-slider-wrapper">
                     <div class="slider-element slider-axis slider-axis--second"></div>
                     <div class="slider-element slider-axis"></div>
-                    <input class="slider-element slider-point" type="button"></input>
-                    <input class="slider-element slider-point slider-point--second" type="button"></input>
+                    <input class="slider-element slider-point" type="button" value="min">
+                    <input class="slider-element slider-point slider-point--second" type="button" value="max">
                   </div>
                 </div>
               </fieldset>
@@ -182,15 +189,16 @@
                 <legend class="visually-hidden">Кнопки</legend>
                 <div class="filter-set-wrapper filter-buttons">
                   <button
-                    type="submit"
                     class="app-button button--optional filter-submit-button"
                     aria-label="Применить фильтр"
+                    type="submit"
                   >
-                    Применить</button
-                  ><button
-                    type="reset"
+                    Применить
+                  </button>
+                  <button
                     class="app-button button--transparent filter-reset-button"
                     aria-label="Очистить фильтр"
+                    type="reset"
                   >
                     Сбросить
                   </button>
@@ -210,9 +218,10 @@
             <div class="sort-view-controls catalog-view-controls">
               <button
                 class="view-mode view-mode--grid view-mode--checked"
-              ></button
-              ><button class="view-mode view-mode--display"></button
-              ><button class="view-mode view-mode--list"></button>
+              >
+              </button>
+              <button class="view-mode view-mode--display"></button>
+              <button class="view-mode view-mode--list"></button>
             </div>
           </div>
           <ul class="hotels-list">
@@ -224,6 +233,8 @@
                   src="./images/hotel-1.jpg"
                   alt="Гостиница Amara Resort &amp; Spa"
                   aria-hidden="true"
+                  width="300"
+                  height="212"
                 />
                 <div class="hotel-properties-wrapper">
                   <dl class="hotel-properties">
@@ -232,8 +243,8 @@
                       <dd class="hotel-property-value">От 4000 ₽</dd>
                     </div>
                   </dl>
-                  <a class="app-button" href="#">подробнее</a
-                  ><button class="app-button button--optional" type="button">
+                  <a class="app-button" href="#">подробнее</a>
+                  <button class="app-button button--optional" type="button">
                     в избранное
                   </button>
                   <div class="hotel-stars">
@@ -242,7 +253,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -256,7 +267,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -270,7 +281,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -284,7 +295,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -293,9 +304,10 @@
                         fill="#83B3D3"
                       ></path>
                     </svg>
-                    <span class="visually-hidden"
-                      >Количество звезд отеля: 4</span
-                    >
+                    <span
+                      class="visually-hidden">
+                      Количество звезд отеля: 4
+                    </span>
                   </div>
                   <div class="hotel-rating">Рейтинг: 8,5</div>
                 </div>
@@ -309,6 +321,8 @@
                   src="./images/hotel-2.jpg"
                   alt="Гостиница Villas at Poco Diablo"
                   aria-hidden="true"
+                  width="300"
+                  height="212"
                 />
                 <div class="hotel-properties-wrapper">
                   <dl class="hotel-properties">
@@ -317,8 +331,8 @@
                       <dd class="hotel-property-value">От 5000 ₽</dd>
                     </div>
                   </dl>
-                  <a class="app-button" href="#">подробнее</a
-                  ><button class="app-button button--selected" type="button">
+                  <a class="app-button" href="#">подробнее</a>
+                  <button class="app-button button--selected" type="button">
                     в избранном
                   </button>
                   <div class="hotel-stars">
@@ -327,7 +341,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -341,7 +355,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -355,7 +369,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -369,7 +383,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -378,9 +392,9 @@
                         fill="#83B3D3"
                       ></path>
                     </svg>
-                    <span class="visually-hidden"
-                      >Количество звезд отеля: 4</span
-                    >
+                    <span class="visually-hidden">
+                      Количество звезд отеля: 4
+                    </span>
                   </div>
                   <div class="hotel-rating">Рейтинг: 9,2</div>
                 </div>
@@ -394,6 +408,8 @@
                   src="./images/hotel-3.jpg"
                   alt="Гостиница Desert Quail Inn"
                   aria-hidden="true"
+                  width="300"
+                  height="212"
                 />
                 <div class="hotel-properties-wrapper">
                   <dl class="hotel-properties">
@@ -402,8 +418,8 @@
                       <dd class="hotel-property-value">От 2500 ₽</dd>
                     </div>
                   </dl>
-                  <a class="app-button" href="#">подробнее</a
-                  ><button class="app-button button--optional" type="button">
+                  <a class="app-button" href="#">подробнее</a>
+                  <button class="app-button button--optional" type="button">
                     в избранное
                   </button>
                   <div class="hotel-stars">
@@ -412,7 +428,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -426,7 +442,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -440,7 +456,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -449,9 +465,9 @@
                         fill="#83B3D3"
                       ></path>
                     </svg>
-                    <span class="visually-hidden"
-                      >Количество звезд отеля: 3</span
-                    >
+                    <span class="visually-hidden">
+                      Количество звезд отеля: 3
+                      </span>
                   </div>
                   <div class="hotel-rating">Рейтинг: 6,9</div>
                 </div>
@@ -465,6 +481,8 @@
                   src="./images/hotel-4.jpg"
                   alt="Гостиница GreenTree Inn"
                   aria-hidden="true"
+                  width="300"
+                  height="212"
                 />
                 <div class="hotel-properties-wrapper">
                   <dl class="hotel-properties">
@@ -473,8 +491,8 @@
                       <dd class="hotel-property-value">От 1500 ₽</dd>
                     </div>
                   </dl>
-                  <a class="app-button" href="#">подробнее</a
-                  ><button class="app-button button--optional" type="button">
+                  <a class="app-button" href="#">подробнее</a>
+                  <button class="app-button button--optional" type="button">
                     в избранное
                   </button>
                   <div class="hotel-stars">
@@ -483,7 +501,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -497,7 +515,7 @@
                       aria-hidden="true"
                       width="18"
                       height="17"
-                      viewBox="0 0 18 17"
+                      view-box="0 0 18 17"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -506,9 +524,9 @@
                         fill="#83B3D3"
                       ></path>
                     </svg>
-                    <span class="visually-hidden"
-                      >Количество звезд отеля: 2</span
-                    >
+                    <span class="visually-hidden">
+                      Количество звезд отеля: 2
+                      </span>
                   </div>
                   <div class="hotel-rating">Рейтинг: 5,0</div>
                 </div>
@@ -574,7 +592,7 @@
                   aria-hidden="true"
                   width="25"
                   height="15"
-                  viewBox="0 0 25 15"
+                  view-box="0 0 25 15"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -597,7 +615,7 @@
                   aria-hidden="true"
                   width="18"
                   height="17"
-                  viewBox="0 0 18 17"
+                  view-box="0 0 18 17"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -615,7 +633,7 @@
                   aria-hidden="true"
                   width="23"
                   height="18"
-                  viewBox="0 0 23 18"
+                  view-box="0 0 23 18"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -633,8 +651,8 @@
             class="phone"
             href="tel:+78128121212"
             aria-label="Контактный телефон"
-            >+7 (812) 812-12-12</a
-          >
+            >+7 (812) 812-12-12
+          </a>
         </address>
         <a
           class="developer-link"
@@ -645,7 +663,7 @@
             aria-hidden="true"
             width="115"
             height="34"
-            viewBox="0 0 115 34"
+            view-box="0 0 115 34"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
