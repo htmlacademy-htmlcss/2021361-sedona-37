@@ -11,7 +11,7 @@
     <div class="page-wrapper">
       <dialog class="modal" id="modal" open="">
         <h1 class="section-title modal__title">Поиск гостиницы в седоне</h1>
-        <form class="modal__form">
+        <form class="modal__form" action="#">
           <div class="modal__field">
             <label class="modal__label" for="date-from">Дата заезда:</label>
             <input
@@ -43,32 +43,33 @@
             </span>
           </div>
           <div class="modal__field modal__field--short">
-            <label class="modal__label" for="man-count">Взрослые:</label
-            ><input
+            <label class="modal__label" for="man-count">Взрослые:</label>
+            <input
               class="modal__input modal__input--number"
               type="number"
               name="man-count"
               id="man-count"
               readonly=""
               tabindex="-1"
-              value="2"
-            /><button class="count-button decrement-button" type="button">
+              value="2">
+            <button class="count-button decrement-button" type="button">
               <svg
                 class="count-button__icon"
                 width="14"
                 height="2"
-                viewBox="0 0 14 2"
+                view-box="0 0 14 2"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M0 0L0 2L14 2V0L0 0Z"></path>
-              </svg></button
-            ><button class="count-button increment-button" type="button">
+              </svg>
+            </button>
+            <button class="count-button increment-button" type="button">
               <svg
                 class="count-button__icon"
                 width="14"
                 height="14"
-                viewBox="0 0 14 14"
+                view-box="0 0 14 14"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -78,12 +79,13 @@
           </div>
           <div class="modal__field modal__field--short">
             <label class="modal__label" for="children-count"
-              >Дети:<span class="modal__label-icon-container"
-                ><svg
+              >Дети:
+              <span class="modal__label-icon-container">
+                <svg
                   class="modal__label-icon"
                   width="3"
                   height="12"
-                  viewBox="0 0 3 12"
+                  view-box="0 0 3 12"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -91,12 +93,14 @@
                     fill-rule="evenodd"
                     clip-rule="evenodd"
                     d="M0.393066 0H2.39307V2H0.393066V0ZM2.39307 12H0.393066V3H2.39307V12Z"
-                  ></path></svg></span
-              ><span class="modal__tooltip"
+                  ></path></svg>
+              </span>
+              <span class="modal__tooltip"
                 >Укажите количество детей, которые будут с вами, возраст которых
-                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
-              ></label
-            ><input
+                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              </span>
+            </label>
+            <input
               class="modal__input modal__input--number"
               type="number"
               name="children-count"
@@ -109,18 +113,18 @@
                 class="count-button__icon"
                 width="14"
                 height="2"
-                viewBox="0 0 14 2"
+                view-box="0 0 14 2"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M0 0L0 2L14 2V0L0 0Z"></path>
-              </svg></button
-            ><button class="count-button increment-button" type="button">
+              </svg></button>
+              <button class="count-button increment-button" type="button">
               <svg
                 class="count-button__icon"
                 width="14"
                 height="14"
-                viewBox="0 0 14 14"
+                view-box="0 0 14 14"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -134,7 +138,7 @@
             class="modal__close-button-icon"
             width="14"
             height="14"
-            viewBox="0 0 14 14"
+            view-box="0 0 14 14"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >
