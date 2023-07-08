@@ -1401,8 +1401,10 @@ input[type="number"] {
   background-color: var(--color-gray);
 }
 
+
 .modal__label-icon-container:hover + .modal__tooltip,
-.modal__label-icon-container:hover + .modal__tooltip:after {
+.modal__label-icon-container:hover + .modal__tooltip:after,
+.modal__label-icon-container:hover + .modal__tooltip:before {
   display: block;
 }
 
@@ -1514,6 +1516,7 @@ input[type="number"] {
 
 .modal__submit-button {
   grid-column: span 2;
+  margin-top: 48px;
 }
 
 .modal__close-button {
