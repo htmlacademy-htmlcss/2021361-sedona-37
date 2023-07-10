@@ -22,6 +22,7 @@
   --color-blue-opacity-03: rgba(104, 162, 202, 0.3);
   --color-green: #7db54f;
   --color-green-alter: #6c9e42;
+  --color-modal-overlay: rgba(242, 242, 242, 0.8);
   --background-color-fallback: #808080;
 
   --outline: 3px solid var(--color-blue-alter);
@@ -1312,11 +1313,10 @@ input[type="number"] {
   padding: 64px 70px;
   background-color: var(--color-white);
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
-  position: relative;
 }
 
 .modal::backdrop {
-  background-color: rgba(242, 242, 242, 0.8);
+  background-color: var(--color-modal-overlay);
 }
 
 .modal__title {
@@ -1556,4 +1556,9 @@ input[type="number"] {
 
 .modal__close-button:active {
   color: var(--color-black-opacity-03);
+}
+
+.modal-runner {
+  margin: auto;
+  grid-row-start: 2;
 }
