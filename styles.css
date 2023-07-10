@@ -268,19 +268,9 @@ img {
   flex-wrap: wrap;
 }
 
-.main-navigation-item {
-  padding: 20px 16px;
-}
-
-.main-navigation-item--current > .main-navigation-link {
-  text-decoration: underline;
-  text-decoration-color: var(--color-brown-alter-2);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 19px;
-  text-underline-position: under;
-}
-
 .main-navigation-link {
+  padding: 20px 16px;
+  display: inline-block;
   text-decoration: none;
   color: inherit;
   transition: opacity 200ms ease;
@@ -294,7 +284,15 @@ img {
   opacity: 0.5;
 }
 
-.main-navigation-item--current > .main-navigation-link {
+.main-navigation-item--current > a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-brown-alter-2);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 19px;
+  text-underline-position: under;
+}
+
+.main-navigation-item--current > a:hover {
   opacity: 1;
 }
 
@@ -373,7 +371,6 @@ img {
   margin-left: -24px;
   z-index: 1;
 }
-
 
 .user-buttons {
   padding-top: 14px;
@@ -660,7 +657,7 @@ img {
   background-size: contain;
   position: absolute;
   right: -18px;
-  top: 0.30em;
+  top: 0.3em;
 }
 
 .breadcrumbs-item--current:after {
@@ -1401,7 +1398,6 @@ input[type="number"] {
   right: 50%;
   background-color: var(--color-gray);
 }
-
 
 .modal__label-icon-container:hover + .modal__tooltip,
 .modal__label-icon-container:hover + .modal__tooltip:after,
