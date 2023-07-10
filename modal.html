@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./modal.js" type="module" defer></script>
   </head>
   <body>
     <div class="page-wrapper">
-      <dialog class="modal" id="modal" open="">
+      <button
+        class="app-button app-button--large modal-runner"
+        type="button"
+        aria-label="открыть окно поиска отеля"
+        onclick="window.modal.showModal();"
+        >
+        Поиск гостиницы в седоне
+      </button>
+      <dialog class="modal" id="modal">
+        <button class="visually-hidden modal__focusholder--start" aria-hidden="true"></button>
         <h1 class="section-title modal__title">Поиск гостиницы в седоне</h1>
-        <form class="modal__form">
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="dialog">
           <div class="modal__field">
             <label class="modal__label" for="date-from">Дата заезда:</label>
             <input
@@ -21,11 +32,10 @@
               id="date-from"
               value="27 апреля 2020"
               placeholder="Укажите дату"
+              required
             />
             <div class="date-picker"></div>
-            <span class="modal__input-state modal__input-state--error">
-              Мы не можем отправить вас в прошлое.
-            </span>
+            <span class="modal__input-state modal__input-state--error">Мы не можем отправить вас в прошлое.</span>
           </div>
           <div class="modal__field">
             <label class="modal__label" for="date-to">Дата выезда:</label>
@@ -36,54 +46,60 @@
               id="date-to"
               value="1 сентября 2023"
               placeholder="Укажите дату"
+              required
             />
             <div class="date-picker"></div>
-            <span class="modal__input-state">
-              На эти даты есть свободные номера. Пока есть.
-            </span>
+            <span class="modal__input-state">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="modal__field modal__field--short">
-            <label class="modal__label" for="man-count">Взрослые:</label
-            ><input
+            <label class="modal__label" for="man-count" aria-label="Количество взрослых.">Взрослые:</label>
+            <input
               class="modal__input modal__input--number"
               type="number"
               name="man-count"
               id="man-count"
               readonly=""
               tabindex="-1"
-              value="2"
-            /><button class="count-button decrement-button" type="button">
+              required
+              value="2">
+            <button class="count-button decrement-button" type="button">
               <svg
                 class="count-button__icon"
                 width="14"
                 height="2"
-                viewBox="0 0 14 2"
+                viewbox="0 0 14 2"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path d="M0 0L0 2L14 2V0L0 0Z"></path>
-              </svg></button
-            ><button class="count-button increment-button" type="button">
+              </svg>
+              <span class="visually-hidden">Уменьшить на 1</span>
+            </button>
+            <button class="count-button increment-button" type="button">
               <svg
                 class="count-button__icon"
                 width="14"
                 height="14"
-                viewBox="0 0 14 14"
+                viewbox="0 0 14 14"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"></path>
               </svg>
+              <span class="visually-hidden">Увеличить на 1</span>
             </button>
           </div>
           <div class="modal__field modal__field--short">
-            <label class="modal__label" for="children-count"
-              >Дети:<span class="modal__label-icon-container"
-                ><svg
+            <label class="modal__label" for="children-count" aria-label="Количество взрослых.">
+              Дети:
+              <span class="modal__label-icon-container">
+                <svg
                   class="modal__label-icon"
                   width="3"
                   height="12"
-                  viewBox="0 0 3 12"
+                  viewbox="0 0 3 12"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -91,50 +107,62 @@
                     fill-rule="evenodd"
                     clip-rule="evenodd"
                     d="M0.393066 0H2.39307V2H0.393066V0ZM2.39307 12H0.393066V3H2.39307V12Z"
-                  ></path></svg></span
-              ><span class="modal__tooltip"
+                  ></path></svg>
+              </span>
+              <span class="modal__tooltip"
                 >Укажите количество детей, которые будут с вами, возраст которых
-                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
-              ></label
-            ><input
+                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              </span>
+            </label>
+            <input
               class="modal__input modal__input--number"
               type="number"
               name="children-count"
               id="children-count"
               readonly=""
               tabindex="-1"
+              required
               value="2"
-            /><button class="count-button decrement-button" type="button">
+            />
+            <button class="count-button decrement-button" type="button">
               <svg
                 class="count-button__icon"
                 width="14"
                 height="2"
-                viewBox="0 0 14 2"
+                viewbox="0 0 14 2"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path d="M0 0L0 2L14 2V0L0 0Z"></path>
-              </svg></button
-            ><button class="count-button increment-button" type="button">
+              </svg>
+              <span class="visually-hidden">Уменьшить на 1</span>
+            </button>
+            <button class="count-button increment-button" type="button">
               <svg
                 class="count-button__icon"
                 width="14"
                 height="14"
-                viewBox="0 0 14 14"
+                viewbox="0 0 14 14"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"></path>
               </svg>
+              <span class="visually-hidden">Увеличить на 1</span>
             </button>
           </div>
+
+          <button class="app-button app-button--large button--optional modal__submit-button" type="submit">Найти</button>
         </form>
-        <button class="modal__close-button">
+        <button class="modal__close-button" onclick="window.modal.close()">
           <svg
             class="modal__close-button-icon"
+            aria-hidden="true"
             width="14"
             height="14"
-            viewBox="0 0 14 14"
+            viewbox="0 0 14 14"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -142,7 +170,9 @@
               d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"
             ></path>
           </svg>
+          <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
+        <button class="visually-hidden modal__focusholder--end" aria-hidden="true"></button>
       </dialog>
     </div>
   </body>
