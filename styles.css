@@ -467,7 +467,7 @@ img {
 
 .advantages-title-1 {
   margin-bottom: 21px;
-  padding: 69px 274px;
+  padding: 69px 270px;
 }
 
 .advantages-title-1 > .section-title {
@@ -481,7 +481,7 @@ img {
 .advantage {
   flex-basis: 400px;
   min-height: 385px;
-  padding: 103px 85px 81px;
+  padding: 103px 84px 81px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -537,7 +537,6 @@ img {
 }
 
 .advantage-slogan {
-  max-width: 230px;
   margin: 0;
   font-size: 18px;
   line-height: 21px;
@@ -851,14 +850,14 @@ img {
   gap: 2px;
 }
 
-/* Chrome, Safari, Edge, Opera */
+/* сброс стилей для числовых инпутов в Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
+/* сброс стилей для числовых инпутов в Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -1363,7 +1362,7 @@ input[type="number"] {
 .modal__label-icon-container {
   width: 26px;
   height: 26px;
-  margin-left: 10px;
+  margin-left: 15px;
   border-radius: 100%;
   background-color: var(--color-blue-alter);
   color: var(--color-white);
@@ -1380,10 +1379,10 @@ input[type="number"] {
   width: 256px;
   display: none;
   border-radius: 10px;
-  padding: 15px 18px 18px 22px;
+  padding: 22px 18px 18px 22px;
   position: absolute;
   top: 52px;
-  right: 46px;
+  right: 42px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1522,6 +1521,7 @@ input[type="number"] {
 .modal__submit-button {
   grid-column: span 2;
   margin-top: 48px;
+  min-height: 60px;
 }
 
 .modal__close-button {
