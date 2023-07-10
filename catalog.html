@@ -49,9 +49,9 @@
                 aria-label="Перейти на страницу избранных отелей"
               >
               </a>
+              <span class="visually-hidden">Количество избранных отелей:</span>
               <span
                 class="favorite-counter user-action--favorites-counter"
-                aria-label="количество избранных отелей"
               >
                 12
               </span>
@@ -225,19 +225,25 @@
               <button
                 class="view-mode view-mode--grid view-mode--checked"
               >
+                <span class="visually-hidden">Показать отели мелкой сеткой</span>
               </button>
-              <button class="view-mode view-mode--display"></button>
-              <button class="view-mode view-mode--list"></button>
+              <button class="view-mode view-mode--display">
+                <span class="visually-hidden">Показать отели крупной сеткой</span>
+              </button>
+              <button class="view-mode view-mode--list">
+                <span class="visually-hidden">Показать отели списком</span>
+              </button>
             </div>
           </div>
           <ul class="hotels-list">
             <li>
+              <h2 class="visually-hidden">Карточка объекта</h2>
               <article class="hotel-item">
                 <h3 class="hotel-name">Amara Resort &amp; Spa</h3>
                 <img
                   class="hotel-photo"
                   src="./images/hotel-1.jpg"
-                  alt="Гостиница Amara Resort &amp; Spa"
+                  alt=""
                   aria-hidden="true"
                   width="300"
                   height="212"
@@ -320,12 +326,13 @@
               </article>
             </li>
             <li>
+              <h2 class="visually-hidden">Карточка объекта</h2>
               <article class="hotel-item">
                 <h3 class="hotel-name">Villas at Poco Diablo</h3>
                 <img
                   class="hotel-photo"
                   src="./images/hotel-2.jpg"
-                  alt="Гостиница Villas at Poco Diablo"
+                  alt=""
                   aria-hidden="true"
                   width="300"
                   height="212"
@@ -407,12 +414,13 @@
               </article>
             </li>
             <li>
+              <h2 class="visually-hidden">Карточка объекта</h2>
               <article class="hotel-item">
                 <h3 class="hotel-name">Desert Quail Inn</h3>
                 <img
                   class="hotel-photo"
                   src="./images/hotel-3.jpg"
-                  alt="Гостиница Desert Quail Inn"
+                  alt=""
                   aria-hidden="true"
                   width="300"
                   height="212"
@@ -480,12 +488,13 @@
               </article>
             </li>
             <li>
+              <h2 class="visually-hidden">Карточка объекта</h2>
               <article class="hotel-item">
                 <h3 class="hotel-name">GreenTree Inn</h3>
                 <img
                   class="hotel-photo"
                   src="./images/hotel-4.jpg"
-                  alt="Гостиница GreenTree Inn"
+                  alt=""
                   aria-hidden="true"
                   width="300"
                   height="212"
@@ -541,22 +550,22 @@
           </ul>
           <ul class="pagination-list">
             <li class="pagination-item">
-              <a class="pagination-link pagination-link--current" href="#">1</a>
+              <a class="pagination-link pagination-link--current" href="#"><span class="visually-hidden">Страница</span>1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
+              <a class="pagination-link" href="#"><span class="visually-hidden">Страница</span>2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
+              <a class="pagination-link" href="#"><span class="visually-hidden">Страница</span>3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
+              <a class="pagination-link" href="#"><span class="visually-hidden">Страница</span>4</a>
             </li>
             <li class="pagination-item pagination-item--dotted">
-              <button>...</button>
+              <button aria-label="Показать еще страницы.">...</button>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
+              <a class="pagination-link" href="#"><span class="visually-hidden">Страница</span>10</a>
             </li>
           </ul>
         </div>
@@ -570,9 +579,11 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
+            <label class="visually-hidden" for="email">Введите вашу электронную почту</label>
             <input
               class="subscribe-input subscribe-input--alter"
               type="email"
+              id="email"
               placeholder="Ваш e-mail"
               required
             />
@@ -591,7 +602,7 @@
               <a
                 class="social-link"
                 href="#"
-                aria-label="Переход на страницу вконтатке"
+                aria-label="Вконтакте."
                 ><svg
                   class="social-icon"
                   aria-hidden="true"
@@ -614,7 +625,7 @@
               <a
                 class="social-link"
                 href="#"
-                aria-label="Переход на телеграмм-канал"
+                aria-label="Телеграм."
                 ><svg
                   class="social-icon"
                   aria-hidden="true"
@@ -632,7 +643,7 @@
               </a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="#" aria-label="Переход на ютуб-канал"
+              <a class="social-link" href="#" aria-label="Ютуб."
                 ><svg
                   class="social-icon"
                   aria-hidden="true"
@@ -656,13 +667,14 @@
             class="phone"
             href="tel:+78128121212"
             aria-label="Контактный телефон"
-            >+7 (812) 812-12-12
+          >
+            +7 (812) 812-12-12
           </a>
         </address>
         <a
           class="developer-link"
           href="https://htmlacademy.ru/"
-          aria-label="Ссылка на сайт HTML-Academy - компании-разработчика сайта"
+          aria-label="HTML-Academy - компания-разработчик сайта."
           ><svg
             class="developer-image"
             aria-hidden="true"

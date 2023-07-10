@@ -42,7 +42,7 @@
             <span class="modal__input-state">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="modal__field modal__field--short">
-            <label class="modal__label" for="man-count">Взрослые:</label>
+            <label class="modal__label" for="man-count" aria-label="Количество взрослых.">Взрослые:</label>
             <input
               class="modal__input modal__input--number"
               type="number"
@@ -60,9 +60,11 @@
                 viewbox="0 0 14 2"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path d="M0 0L0 2L14 2V0L0 0Z"></path>
               </svg>
+              <span class="visually-hidden">Уменьшить на 1</span>
             </button>
             <button class="count-button increment-button" type="button">
               <svg
@@ -72,14 +74,16 @@
                 viewbox="0 0 14 14"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"></path>
               </svg>
+              <span class="visually-hidden">Увеличить на 1</span>
             </button>
           </div>
           <div class="modal__field modal__field--short">
-            <label class="modal__label" for="children-count"
-              >Дети:
+            <label class="modal__label" for="children-count" aria-label="Количество взрослых.">
+              Дети:
               <span class="modal__label-icon-container">
                 <svg
                   class="modal__label-icon"
@@ -109,7 +113,8 @@
               tabindex="-1"
               required
               value="2"
-            /><button class="count-button decrement-button" type="button">
+            />
+            <button class="count-button decrement-button" type="button">
               <svg
                 class="count-button__icon"
                 width="14"
@@ -117,10 +122,13 @@
                 viewbox="0 0 14 2"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path d="M0 0L0 2L14 2V0L0 0Z"></path>
-              </svg></button>
-              <button class="count-button increment-button" type="button">
+              </svg>
+              <span class="visually-hidden">Уменьшить на 1</span>
+            </button>
+            <button class="count-button increment-button" type="button">
               <svg
                 class="count-button__icon"
                 width="14"
@@ -128,9 +136,11 @@
                 viewbox="0 0 14 14"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"></path>
               </svg>
+              <span class="visually-hidden">Увеличить на 1</span>
             </button>
           </div>
 

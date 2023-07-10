@@ -37,19 +37,19 @@
             <li class="user-action-item">
               <button
                 class="user-action user-action--search"
-                aria-label="Найти отель по названию"
+                aria-label="Найти отель по названию."
               ></button>
             </li>
             <li class="user-action-item">
               <a
                 class="user-action user-action--favorites"
                 href="#"
-                aria-label="Перейти на страницу избранных отелей"
+                aria-label="Страница избранных отелей."
               >
               </a>
+              <span class="visually-hidden">Количество избранных отелей:</span>
               <span
                 class="favorite-counter user-action--favorites-counter"
-                aria-label="количество избранных отелей"
               >
                 12
               </span>
@@ -88,8 +88,8 @@
           <ul class="advantages-list">
             <li class="advantage-item advantage-item--imaged">
               <div class="advantage bg--main advantage--underlined">
-                <h3 class="advantage-title"><span class="visually-hidden">Причина № 1 - это</span>Настоящий городок</h3>
-                <p class="advantage-slogan"><span class="visually-hidden">Потому что, </span>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <h3 class="advantage-title"><span class="visually-hidden">Причина № 1.</span>Настоящий городок</h3>
+                <p class="advantage-slogan">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img
                 class="advantage-image"
@@ -101,25 +101,25 @@
             </li>
             <li class="advantage-item">
               <div class="advantage bg--option-lighter advantage--underlined">
-                <h3 class="advantage-title advantage-title--lower">Небольшая площадь</h3>
+                <h3 class="advantage-title advantage-title--lower"><span class="visually-hidden">Причина № 2.</span>Небольшая площадь</h3>
                 <p class="advantage-slogan">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
             <li class="advantage-item">
               <div class="advantage bg--option advantage--underlined">
-                <h3 class="advantage-title advantage-title--lower">Красивая дорога</h3>
+                <h3 class="advantage-title advantage-title--lower"><span class="visually-hidden">Причина № 3.</span>Красивая дорога</h3>
                 <p class="advantage-slogan">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantage-item">
               <div class="advantage bg--option-lighter advantage--underlined">
-                <h3 class="advantage-title advantage-title--lower">Мало туристов</h3>
+                <h3 class="advantage-title advantage-title--lower"><span class="visually-hidden">Причина № 4.</span>Мало туристов</h3>
                 <p class="advantage-slogan">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
             <li class="advantage-item advantage-item--imaged">
               <div class="advantage bg--main advantage--underlined">
-                <h3 class="advantage-title">Там есть<br />мост дьявола</h3>
+                <h3 class="advantage-title"><span class="visually-hidden">Причина № 5.</span>Там есть<br />мост дьявола</h3>
                 <p class="advantage-slogan">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
               <img
@@ -138,7 +138,7 @@
           <ul class="advantages-list">
             <li class="advantage-item">
               <div class="advantage bg--option advantage--with-icon">
-                <h3 class="advantage-title">Жильё</h3>
+                <h3 class="advantage-title"><span class="visually-hidden">Причина № 6.</span>Жильё</h3>
                 <p class="advantage-slogan">Рекомендуем пожить<span></span> в настоящем мотеле,<span></span> всё как в кино!</p>
                 <div class="advantage-icon">
                   <img
@@ -152,7 +152,7 @@
             </li>
             <li class="advantage-item">
               <div class="advantage bg--option-lighter advantage--with-icon">
-                <h3 class="advantage-title">Еда</h3>
+                <h3 class="advantage-title"><span class="visually-hidden">Причина № 7.</span>Еда</h3>
                 <p class="advantage-slogan">Всегда заказывайте<span></span> топовый фирменный бургер,<span></span> вы не разочаруетесь!</p>
                 <div class="advantage-icon">
                   <img
@@ -166,7 +166,7 @@
             </li>
             <li class="advantage-item">
               <div class="advantage bg--option advantage--with-icon">
-                <h3 class="advantage-title">Сувениры</h3>
+                <h3 class="advantage-title"><span class="visually-hidden">Причина № 8.</span>Сувениры</h3>
                 <p class="advantage-slogan">Не только китайского,<span></span> но и настоящего местного<span></span> производства!</p>
                 <div class="advantage-icon">
                   <img
@@ -201,9 +201,11 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
+            <label class="visually-hidden" for="email">Введите вашу электронную почту</label>
             <input
               class="subscribe-input subscribe-input--alter"
               type="email"
+              id="email"
               placeholder="Ваш e-mail"
               required
             >
@@ -222,7 +224,7 @@
               <a
                 class="social-link"
                 href="#"
-                aria-label="Переход на страницу вконтатке"
+                aria-label="Вконтакте."
                 ><svg
                   class="social-icon"
                   aria-hidden="true"
@@ -245,7 +247,7 @@
               <a
                 class="social-link"
                 href="#"
-                aria-label="Переход на телеграмм-канал"
+                aria-label="Телеграм."
                 ><svg
                   class="social-icon"
                   aria-hidden="true"
@@ -263,7 +265,7 @@
               </a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="#" aria-label="Переход на ютуб-канал"
+              <a class="social-link" href="#" aria-label="Ютуб."
                 ><svg
                   class="social-icon"
                   aria-hidden="true"
@@ -294,7 +296,7 @@
         <a
           class="developer-link"
           href="https://htmlacademy.ru/"
-          aria-label="Ссылка на сайт HTML-Academy - компании-разработчика сайта"
+          aria-label="HTML-Academy - компания-разработчик сайта."
           ><svg
             class="developer-image"
             aria-hidden="true"
