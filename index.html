@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="header-logo" href="./index.html" aria-current="page"
           ><img
             src="./images/logo.svg"
@@ -62,9 +62,9 @@
           </div>
         </div>
       </header>
-      <main class="page-content">
+      <main class="page-content" data-test="main">
         <h1 class="visually-hidden">Домашная страница города Седона.</h1>
-        <section class="hero">
+        <section class="hero" data-test="hero">
           <h2 class="visually-hidden">
             Баннер с декоративной надписью и пейзажем на заднем фоне.
           </h2>
@@ -80,7 +80,8 @@
           <div class="hero-figure triangle--right-outer"></div>
           <div class="hero-figure triangle--right-inner"></div>
         </section>
-        <section class="advantages" id="advantages">
+
+        <section class="advantages" id="advantages" data-test="advantages">
           <div class="advantages-title-1">
             <h2 class="section-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="section-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -131,6 +132,9 @@
               />
             </li>
           </ul>
+        </section>
+
+        <section class="advantages" data-test="service">
           <div class="advantages-title-2">
             <h2 class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="section-subtitle">Опытный персонал и качественное обслуживание!</p>
@@ -180,7 +184,8 @@
             </li>
           </ul>
         </section>
-        <section class="hotel-search">
+
+        <section class="hotel-search" data-test="search">
           <h2 class="section-title">Заинтересовались?</h2>
           <p class="section-subtitle">Укажите предполагаемые даты поездки,<span></span> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button
@@ -191,7 +196,8 @@
             Поиск гостиницы в седоне
           </button>
         </section>
-        <section class="subscribe">
+
+        <section class="subscribe" data-test="subscribe">
           <h2 class="section-title title--inverted">Подпишитесь на рассылку</h2>
           <p class="section-subtitle title--inverted section-subtitle--subscribe">
             Только полезная информация и никакого спама, честное бойскаутское!
@@ -216,7 +222,7 @@
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <section class="social-wrapper">
           <h2 class="visually-hidden">Список социальных сетей</h2>
           <ul class="social-list">
