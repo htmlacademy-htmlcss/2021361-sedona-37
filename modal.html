@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +7,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./modal.js" type="module" defer></script>
   </head>
   <body>
     <div class="page-wrapper">
@@ -19,6 +20,7 @@
         Поиск гостиницы в седоне
       </button>
       <dialog class="modal" id="modal">
+        <button class="visually-hidden modal__focusholder--start" aria-hidden="true"></button>
         <h1 class="section-title modal__title">Поиск гостиницы в седоне</h1>
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="dialog">
           <div class="modal__field">
@@ -170,6 +172,7 @@
           </svg>
           <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
+        <button class="visually-hidden modal__focusholder--end" aria-hidden="true"></button>
       </dialog>
     </div>
   </body>
