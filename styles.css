@@ -88,7 +88,8 @@ img {
   white-space: nowrap;
   border: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 .page-wrapper {
@@ -117,7 +118,6 @@ img {
 
 .app-button {
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   min-height: 36px;
   border: none;
@@ -229,6 +229,8 @@ img {
 /* Хэдер приложения */
 
 .page-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   min-height: var(--page-header-min-height);
   grid-area: header;
   padding: 0 70px;
@@ -286,7 +288,8 @@ img {
 
 .main-navigation-item--current > a {
   text-decoration: underline;
-  text-decoration-color: var(--color-brown-alter-2);
+  -webkit-text-decoration-color: var(--color-brown-alter-2);
+          text-decoration-color: var(--color-brown-alter-2);
   text-decoration-thickness: 2px;
   text-underline-offset: 19px;
   text-underline-position: under;
@@ -388,6 +391,8 @@ img {
 /* Контейнер с основным контентом */
 
 .page-content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   min-height: calc(
     100vh - var(--page-header-min-height) - var(--page-footer-min-height)
   );
@@ -752,7 +757,6 @@ img {
 .input {
   position: absolute;
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   width: 1px;
   height: 1px;
@@ -762,7 +766,8 @@ img {
   white-space: nowrap;
   border: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 .input-icon {
@@ -940,6 +945,8 @@ input[type="number"] {
 /* Футер страницы */
 
 .page-footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   min-height: var(--page-footer-min-height);
   grid-area: footer;
   padding: 40px 70px 30px;
@@ -1266,7 +1273,8 @@ input[type="number"] {
 /* Сортировки */
 
 .sort-direction {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   display: block;
   width: 292px;
   height: 49px;
