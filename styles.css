@@ -1312,7 +1312,6 @@ input[type="number"] {
   padding: 64px 70px;
   background-color: var(--color-white);
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
-  position: relative;
 }
 
 .modal::backdrop {
@@ -1556,4 +1555,9 @@ input[type="number"] {
 
 .modal__close-button:active {
   color: var(--color-black-opacity-03);
+}
+
+.modal-runner {
+  margin: auto;
+  grid-row-start: 2;
 }

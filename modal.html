@@ -7,10 +7,19 @@
     <title>HTML Academy: Седона</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./dialog.js" type="module" defer></script>
   </head>
   <body>
     <div class="page-wrapper">
-      <dialog class="modal" id="modal" open="">
+      <button
+        class="app-button app-button--large modal-runner"
+        type="button"
+        aria-label="открыть окно поиска отеля"
+        onclick="window.modal.showModal();"
+        >
+        Поиск гостиницы в седоне
+      </button>
+      <dialog class="modal" id="modal">
         <h1 class="section-title modal__title">Поиск гостиницы в седоне</h1>
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="dialog">
           <div class="modal__field">
@@ -146,7 +155,7 @@
 
           <button class="app-button app-button--large button--optional modal__submit-button" type="submit">Найти</button>
         </form>
-        <button class="modal__close-button">
+        <button class="modal__close-button" onclick="window.modal.close()">
           <svg
             class="modal__close-button-icon"
             aria-hidden="true"
