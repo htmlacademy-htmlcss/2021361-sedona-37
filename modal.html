@@ -12,7 +12,7 @@
     <div class="page-wrapper">
       <dialog class="modal" id="modal" open="">
         <h1 class="section-title modal__title">Поиск гостиницы в седоне</h1>
-        <form class="modal__form" action="#" method="dialog">
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="dialog">
           <div class="modal__field">
             <label class="modal__label" for="date-from">Дата заезда:</label>
             <input
@@ -22,6 +22,7 @@
               id="date-from"
               value="27 апреля 2020"
               placeholder="Укажите дату"
+              required
             />
             <div class="date-picker"></div>
             <span class="modal__input-state modal__input-state--error">Мы не можем отправить вас в прошлое.</span>
@@ -35,6 +36,7 @@
               id="date-to"
               value="1 сентября 2023"
               placeholder="Укажите дату"
+              required
             />
             <div class="date-picker"></div>
             <span class="modal__input-state">На эти даты есть свободные номера. Пока есть.</span>
@@ -48,6 +50,7 @@
               id="man-count"
               readonly=""
               tabindex="-1"
+              required
               value="2">
             <button class="count-button decrement-button" type="button">
               <svg
@@ -104,6 +107,7 @@
               id="children-count"
               readonly=""
               tabindex="-1"
+              required
               value="2"
             /><button class="count-button decrement-button" type="button">
               <svg
