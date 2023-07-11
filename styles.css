@@ -1384,9 +1384,10 @@ input[type="number"] {
   background-color: var(--color-gray);
 }
 
+.modal__label-icon-container:focus-visible + .modal__tooltip,
+.modal__label-icon-container:focus-visible + .modal__tooltip:after,
 .modal__label-icon-container:hover + .modal__tooltip,
-.modal__label-icon-container:hover + .modal__tooltip:after,
-.modal__label-icon-container:hover + .modal__tooltip:before {
+.modal__label-icon-container:hover + .modal__tooltip:after {
   display: block;
 }
 

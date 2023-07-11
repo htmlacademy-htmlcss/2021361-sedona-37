@@ -94,7 +94,7 @@
           <div class="modal__field modal__field--short">
             <label class="modal__label" for="children-count" aria-label="Количество взрослых.">
               Дети:
-              <span class="modal__label-icon-container">
+              <span class="modal__label-icon-container" tabindex="0">
                 <svg
                   class="modal__label-icon"
                   width="3"
@@ -102,6 +102,7 @@
                   viewbox="0 0 3 12"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     fill-rule="evenodd"
@@ -109,8 +110,8 @@
                     d="M0.393066 0H2.39307V2H0.393066V0ZM2.39307 12H0.393066V3H2.39307V12Z"
                   ></path></svg>
               </span>
-              <span class="modal__tooltip"
-                >Укажите количество детей, которые будут с вами, возраст которых
+              <span class="modal__tooltip" role="tooltip">
+                Укажите количество детей, которые будут с вами, возраст которых
                 от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
               </span>
             </label>
