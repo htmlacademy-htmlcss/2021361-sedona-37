@@ -127,6 +127,7 @@ img {
   border: none;
   border-radius: 4px;
   padding: 8px;
+  display: block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
