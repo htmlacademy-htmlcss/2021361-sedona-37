@@ -31,6 +31,8 @@
   --page-footer-min-height: 120px;
 
   --icon-checkbox-checked: url("./images/checked.svg");
+
+  --font-family: "PT Sans", Arial, sans-serif;
 }
 
 @font-face {
@@ -58,7 +60,7 @@ body {
   min-width: 1280px;
   padding: 0;
   margin: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -125,6 +127,7 @@ img {
   border: none;
   border-radius: 4px;
   padding: 8px;
+  display: block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -373,7 +376,7 @@ img {
 .user-action--favorites-counter {
   position: absolute;
   top: 10px;
-  margin-left: -24px;
+  left: 20px;
   z-index: 1;
 }
 
@@ -417,36 +420,6 @@ img {
   margin: 0 auto;
 }
 
-.hero-figure {
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-}
-
-[class*="triangle"] {
-  border-bottom: 57px solid var(--color-white);
-  z-index: 2;
-}
-
-.triangle--left-outer {
-  border-right: 600px solid transparent;
-}
-
-.triangle--left-inner {
-  left: 250px;
-  border-right: 350px solid transparent;
-}
-
-.triangle--right-outer {
-  right: 0;
-  border-left: 600px solid transparent;
-}
-
-.triangle--right-inner {
-  right: 250px;
-  border-left: 350px solid transparent;
-}
 
 /* Преимущества */
 
@@ -1286,11 +1259,17 @@ input[type="number"] {
   font-size: 18px;
   line-height: 21px;
   color: var(--color-gray);
-
+  background-color: var(--color-white);
   background-image: url("./images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 12px 7px;
+}
+
+@-moz-document url-prefix() {
+  .sort-direction option {
+    font-size: 0.9em;
+  }
 }
 
 .sort-direction:hover,
@@ -1406,9 +1385,10 @@ input[type="number"] {
   background-color: var(--color-gray);
 }
 
+.modal__label-icon-container:focus-visible + .modal__tooltip,
+.modal__label-icon-container:focus-visible + .modal__tooltip:after,
 .modal__label-icon-container:hover + .modal__tooltip,
-.modal__label-icon-container:hover + .modal__tooltip:after,
-.modal__label-icon-container:hover + .modal__tooltip:before {
+.modal__label-icon-container:hover + .modal__tooltip:after {
   display: block;
 }
 
@@ -1562,4 +1542,3 @@ input[type="number"] {
   margin: auto;
   grid-row-start: 2;
 }
-
