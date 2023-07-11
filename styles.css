@@ -375,14 +375,8 @@ img {
 .user-action--favorites-counter {
   position: absolute;
   top: 10px;
-  margin-left: -24px;
+  left: 20px;
   z-index: 1;
-}
-
-@-moz-document url-prefix() {
-  .user-action--favorites-counter {
-    margin-left: 20px;
-  }
 }
 
 .user-buttons {
