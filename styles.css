@@ -1258,11 +1258,17 @@ input[type="number"] {
   font-size: 18px;
   line-height: 21px;
   color: var(--color-gray);
-
+  background-color: var(--color-white);
   background-image: url("./images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 12px 7px;
+}
+
+@-moz-document url-prefix() {
+  .sort-direction option {
+    font-size: 0.9em;
+  }
 }
 
 .sort-direction:hover,
