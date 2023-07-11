@@ -379,6 +379,12 @@ img {
   z-index: 1;
 }
 
+@-moz-document url-prefix() {
+  .user-action--favorites-counter {
+    margin-left: 20px;
+  }
+}
+
 .user-buttons {
   padding-top: 14px;
 }
